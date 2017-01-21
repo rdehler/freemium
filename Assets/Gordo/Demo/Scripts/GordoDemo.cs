@@ -46,11 +46,17 @@ public class GordoDemo : MonoBehaviour {
 			}
 				*/
 				ac.SetBool ("Hi_01", true);
+				registerClick ();
 		}
 
 	}
 
-
+	void registerClick() {
+			Debug.Log ("Inside registerClick");
+			GameControl.control.numClicks += 1;
+			// probably don't want this on every click...
+			GameControl.control.Save ();
+	}
 
 
 	void Reset() {
