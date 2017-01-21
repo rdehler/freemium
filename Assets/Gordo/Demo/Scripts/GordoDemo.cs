@@ -28,7 +28,7 @@ public class GordoDemo : MonoBehaviour {
 
 	// NEW Start Specific Animation ==========
 	public void clickAnimation(bool is_on) {
-
+			Debug.Log ("inside click animation "+EventSystem.current.currentSelectedGameObject);
 		if (is_on) {
 
 			// Selected Toggle
@@ -36,14 +36,16 @@ public class GordoDemo : MonoBehaviour {
 			
 			// Trigger name
 			string trig_name = my_toggle.GetComponent<DAChkBox>().param_01;
-
+				/*
 			// If trigger exists in Animation Controller, Set Trigger
-			bool ok = false;
-			for (int i=0;  i < ac_parms.Length; i++) if (ac_parms[i].name == trig_name) ok = true;
-			if (ok) {
-				ac.SetBool(trig_name, true);
+			for (int i = 0; i < ac_parms.Length; i++) {
+				if (ac_parms [i].name == trig_name) {
+						Debug.Log (trig_name);
+					ac.SetBool (trig_name, true);
+				}
 			}
-
+				*/
+				ac.SetBool ("Hi_01", true);
 		}
 
 	}

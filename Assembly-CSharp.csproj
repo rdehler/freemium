@@ -48,9 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Gordo\Demo\Prefabs\DAChkBox\Scripts\DAChkBox.cs" />
      <Compile Include="Assets\Gordo\Demo\Scripts\GordoDemo.cs" />
-     <Compile Include="Assets\Gordo\Prefabs\DALogo\Scripts\DALogo.cs" />
-     <Compile Include="Assets\Gordo\Prefabs\DASkeleton\Scripts\DALimb.cs" />
-     <Compile Include="Assets\Gordo\Prefabs\DASkeleton\Scripts\DASkeleton.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
      <Compile Include="Assets\_Completed-Assets\Scripts\CompleteCameraController.cs" />
