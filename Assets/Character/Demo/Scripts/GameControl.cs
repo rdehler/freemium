@@ -28,18 +28,18 @@ public class GameControl : MonoBehaviour {
 
 	void OnGUI() {
 		GUI.Label (new Rect (10, 10, 100, 30), "Level: " + numClicks);
-		GUI.Label (new Rect (10, 40, 250, 30), "Time of last level up: " + lastClick.ToString("M/dd/yy H:mm:ss tt"));
+		GUI.Label (new Rect (10, 40, 250, 30), "Time of last level up: " + lastClick.ToString("M/dd/yy h:mm:ss tt"));
 		TimeSpan span = -(System.DateTime.Now - lastClick - System.TimeSpan.FromMilliseconds (millisecs));
 		if (span.Seconds < 0) {
 			span = System.TimeSpan.FromMilliseconds (0);
 		}
 		GUI.Label (new Rect (10, 70, 250, 30), "Time Left: " + formatTimeFromSeconds(span));
-		GUI.Label (new Rect (10, 100, 250, 30), "Points: " + playerPoints);
+		GUI.Label (new Rect (10, 100, 250, 30), "Points: " + String.Format("{0:n0}", playerPoints));
 		if (hasBeenLongEnough()) {
 			// this method also calcs how many bonus points are available
 			if (bonusPointsAvailable ()) {
 				GUI.Label (new Rect (10, 130, 250, 30), "Level up!  Collect your bonus points!");
-				GUI.Label (new Rect (10, 160, 250, 30), "Bonus points: "+bonusPoints);
+				GUI.Label (new Rect (10, 160, 250, 30), "Bonus points: "+String.Format("{0:n0}", playerPoints));
 			} else {
 				GUI.Label (new Rect (10, 130, 250, 30), "Bonus expired, click to level up!");
 			}

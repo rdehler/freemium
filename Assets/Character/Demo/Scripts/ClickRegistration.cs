@@ -24,6 +24,7 @@ namespace DArts {
 				if (GameControl.control.hasBeenLongEnough ()) {
 					registerClick ();
 				} else {
+					ConvoTextController.control.setContent("Hasn't been long enough...");
 					Debug.Log ("Hasn't been long enough!");
 				}
 			}
@@ -31,6 +32,8 @@ namespace DArts {
 		}
 
 		void registerClick() {
+			ConvoTextController.control.setContent ("Hooray I leveled up!", 10);
+
 			GameControl.control.numClicks += 1;
 			if (GameControl.control.numClicks > Constants.MAX_LEVELS) {
 				//GameControl.control.numClicks = 1;
