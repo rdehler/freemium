@@ -95,8 +95,8 @@ public class GameControl : MonoBehaviour {
 	}
 
 	bool bonusPointsAvailable() {
-		bonusPoints = Constants.MAX_POINTS;
-		bonusPoints -= (int)(((System.DateTime.Now - lastClick).TotalMilliseconds - millisecs) / 1000);
+		bonusPoints = Constants.MAX_POINTS * numClicks;
+		bonusPoints -= numClicks * (int)(((System.DateTime.Now - lastClick).TotalMilliseconds - millisecs) / 1000);
 
 		return bonusPoints > 0;
 	}
