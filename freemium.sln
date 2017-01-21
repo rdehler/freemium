@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{00EFE032-1B75-55FF-3E3E-F4496BC52EFD}") = "freemium", "Assembly-CSharp.csproj", "{7558079E-C2FD-1F9F-E200-0FDB04966D6B}"
+EndProject
+Project("{00EFE032-1B75-55FF-3E3E-F4496BC52EFD}") = "freemium", "Assembly-CSharp-Editor.csproj", "{FB99763A-AFC1-A370-AD74-B5D2FC2E019D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7558079E-C2FD-1F9F-E200-0FDB04966D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7558079E-C2FD-1F9F-E200-0FDB04966D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7558079E-C2FD-1F9F-E200-0FDB04966D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7558079E-C2FD-1F9F-E200-0FDB04966D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB99763A-AFC1-A370-AD74-B5D2FC2E019D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB99763A-AFC1-A370-AD74-B5D2FC2E019D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB99763A-AFC1-A370-AD74-B5D2FC2E019D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB99763A-AFC1-A370-AD74-B5D2FC2E019D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
