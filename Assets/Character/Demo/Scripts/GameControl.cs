@@ -12,8 +12,10 @@ public class GameControl : MonoBehaviour {
 	public int numClicks;
 	public DateTime lastClick;
 	public int lastLevelCompleted;
+	public int playerPoints;
 
 	double millisecs;
+	int bonusPoints = 0;
 
 	void Awake () {
 		if (control == null) {
@@ -25,15 +27,22 @@ public class GameControl : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUI.Label (new Rect (10, 10, 100, 30), "Clicks: " + numClicks);
-		GUI.Label (new Rect (10, 40, 250, 30), "Time: " + lastClick);
+		GUI.Label (new Rect (10, 10, 100, 30), "Level: " + numClicks);
+		GUI.Label (new Rect (10, 40, 250, 30), "Time of last level up: " + lastClick.ToString("M/dd/yy H:mm:ss tt"));
 		TimeSpan span = -(System.DateTime.Now - lastClick - System.TimeSpan.FromMilliseconds (millisecs));
 		if (span.Seconds < 0) {
 			span = System.TimeSpan.FromMilliseconds (0);
 		}
 		GUI.Label (new Rect (10, 70, 250, 30), "Time Left: " + formatTimeFromSeconds(span));
+		GUI.Label (new Rect (10, 100, 250, 30), "Points: " + playerPoints);
 		if (hasBeenLongEnough()) {
-			GUI.Label (new Rect (10, 100, 250, 30), "It's been long enough!");
+			// this method also calcs how many bonus points are available
+			if (bonusPointsAvailable ()) {
+				GUI.Label (new Rect (10, 130, 250, 30), "Level up!  Collect your bonus points!");
+				GUI.Label (new Rect (10, 160, 250, 30), "Bonus points: "+bonusPoints);
+			} else {
+				GUI.Label (new Rect (10, 130, 250, 30), "Bonus expired, click to level up!");
+			}
 		}
 	}
 
@@ -78,10 +87,26 @@ public class GameControl : MonoBehaviour {
 		lastClick = System.DateTime.Now;
 		data.lastClick = lastClick;
 		data.lastLevelCompleted = lastLevelCompleted;
+		data.playerPoints = playerPoints;
 
 		bf.Serialize(file, data);
 
 		file.Close();
+	}
+
+	bool bonusPointsAvailable() {
+		bonusPoints = Constants.MAX_POINTS;
+		bonusPoints -= (int)(((System.DateTime.Now - lastClick).TotalMilliseconds - millisecs) / 1000);
+
+		return bonusPoints > 0;
+	}
+
+	public void addPlayerPoints() {
+		playerPoints += 1000;
+		if (bonusPoints > 0) {
+			playerPoints += bonusPoints;
+		}
+
 	}
 
 	public void Load() {
@@ -95,6 +120,7 @@ public class GameControl : MonoBehaviour {
 			numClicks = data.numClicks;
 
 			lastClick = data.lastClick;
+			playerPoints = data.playerPoints;
 			lastLevelCompleted = data.lastLevelCompleted;
 		}
 	}
@@ -105,4 +131,5 @@ class PlayerData {
 	public int numClicks = 0;
 	public DateTime lastClick = System.DateTime.Now;
 	public int lastLevelCompleted = 0;
+	public int playerPoints = 0;
 }

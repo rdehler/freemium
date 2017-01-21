@@ -35,6 +35,9 @@ namespace DArts {
 			if (GameControl.control.numClicks > Constants.MAX_LEVELS) {
 				//GameControl.control.numClicks = 1;
 			}
+
+			GameControl.control.addPlayerPoints ();
+
 			// probably don't want this on every click...
 			GameControl.control.Save ();
 			GameControl.control.lastLevelCompleted += 1;
