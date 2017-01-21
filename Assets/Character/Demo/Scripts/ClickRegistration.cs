@@ -21,15 +21,23 @@ namespace DArts {
 		public void clickAnimation(bool is_on) {
 			if (is_on) {
 				ac.SetBool ("Hi_01", true);
-				registerClick ();
+				if (GameControl.control.hasBeenLongEnough ()) {
+					registerClick ();
+				} else {
+					Debug.Log ("Hasn't been long enough!");
+				}
 			}
 
 		}
 
 		void registerClick() {
 			GameControl.control.numClicks += 1;
+			if (GameControl.control.numClicks > Constants.MAX_LEVELS) {
+				//GameControl.control.numClicks = 1;
+			}
 			// probably don't want this on every click...
 			GameControl.control.Save ();
+			GameControl.control.lastLevelCompleted += 1;
 		}
 
 
