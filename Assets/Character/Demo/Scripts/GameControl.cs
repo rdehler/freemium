@@ -39,7 +39,7 @@ public class GameControl : MonoBehaviour {
 			// this method also calcs how many bonus points are available
 			if (bonusPointsAvailable ()) {
 				GUI.Label (new Rect (10, 130, 250, 30), "Level up!  Collect your bonus points!");
-				GUI.Label (new Rect (10, 160, 250, 30), "Bonus points: "+String.Format("{0:n0}", playerPoints));
+				GUI.Label (new Rect (10, 160, 250, 30), "Bonus points: "+String.Format("{0:n0}", bonusPoints));
 			} else {
 				GUI.Label (new Rect (10, 130, 250, 30), "Bonus expired, click to level up!");
 			}
