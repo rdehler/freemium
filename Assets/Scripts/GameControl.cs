@@ -144,9 +144,56 @@ public class GameControl : MonoBehaviour {
 	}
 
 	public void addAchievements() {
-		if (true) {
+		if (numClicks >= 2) {
 			addAchievement (Constants.achievement_hit_level_2);
 		}
+		if (numClicks >= 5) {
+			addAchievement (Constants.achievement_hit_level_5);
+		}
+		if (numClicks >= 10) {
+			addAchievement (Constants.achievement_hit_level_10);
+		}
+		if (numClicks >= 15) {
+			addAchievement (Constants.achievement_hit_level_15);
+		}
+		if (numClicks >= 20) {
+			addAchievement (Constants.achievement_hit_level_20);
+		}
+		if (numClicks >= 25) {
+			addAchievement (Constants.achievement_hit_level_25);
+		}
+		if (numClicks >= 30) {
+			addAchievement (Constants.achievement_hit_level_30);
+		}
+		if (numClicks >= 35) {
+			addAchievement (Constants.achievement_hit_level_35);
+		}
+		if (numClicks >= 40) {
+			addAchievement (Constants.achievement_hit_level_40);
+		}
+		if (numClicks >= 45) {
+			addAchievement (Constants.achievement_hit_level_45);
+		}
+		if (numClicks >= 50) {
+			addAchievement (Constants.achievement_hit_level_50);
+		}
+		if (numClicks >= 55) {
+			addAchievement (Constants.achievement_hit_level_55);
+		}
+		if (numClicks >= 65) {
+			addAchievement (Constants.achievement_hit_level_65);
+		}
+
+		Social.ReportScore(playerPoints, Constants.leaderboard_points, (bool success) => {
+			// handle success or failure
+			Debug.Log("leaderboard points: "+success);
+		});
+
+		Social.ReportScore(numClicks, Constants.leaderboard_level, (bool success) => {
+			// handle success or failure
+			Debug.Log("leaderboard level: "+success);
+		});
+
 	}
 
 	void addAchievement(string achievement) {
@@ -155,7 +202,7 @@ public class GameControl : MonoBehaviour {
 		});
 		
 	}
-
+		
 	public void Load() {
 		if (File.Exists (Application.persistentDataPath + "/playerInfo.dat")) {
 			BinaryFormatter bf = new BinaryFormatter ();

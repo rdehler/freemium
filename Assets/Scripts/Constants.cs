@@ -38,31 +38,32 @@ public static class Constants
 
 	public static int BORED_TIMEOUT = 5;
 
-	public static int NUM_BORED = 5;
+	public static int NUM_BORED = 6;
 	public static Dictionary<string, string> DIALOG = new Dictionary<string, string> () {
 		{"BORED_0", "Gosh I wonder what my family is up to..."},
 		{"BORED_1", "I can't remember the last time I slept..."},
 		{"BORED_2", "Just one more level..."},
 		{"BORED_3", "I'm pretty sure it's impossible to beat this game..."},
-		{"BORED_4", "I wonder if it's sunny outside..."}
+		{"BORED_4", "I wonder if it's sunny outside..."},
+		{"BORED_5", "I can't wait to tap my phone again..."}
 	};
-	public const string achievement_hit_level_15 = "CgkI9OuD2JANEAIQBA"; // <GPGSID>
-    public const string leaderboard_points = "CgkI9OuD2JANEAIQEA"; // <GPGSID>
-    public const string achievement_hit_level_65 = "CgkI9OuD2JANEAIQDQ"; // <GPGSID>
-    public const string achievement_hit_level_50 = "CgkI9OuD2JANEAIQCw"; // <GPGSID>
     public const string achievement_barely_there = "CgkI9OuD2JANEAIQDw"; // <GPGSID>
-    public const string achievement_hit_level_55 = "CgkI9OuD2JANEAIQDA"; // <GPGSID>
     public const string achievement_hit_level_2 = "CgkI9OuD2JANEAIQAQ"; // <GPGSID>
-    public const string leaderboard_level = "CgkI9OuD2JANEAIQEQ"; // <GPGSID>
     public const string achievement_hit_level_5 = "CgkI9OuD2JANEAIQAg"; // <GPGSID>
+	public const string achievement_hit_level_10 = "CgkI9OuD2JANEAIQAw"; // <GPGSID>
+	public const string achievement_hit_level_15 = "CgkI9OuD2JANEAIQBA"; // <GPGSID>
+	public const string achievement_hit_level_20 = "CgkI9OuD2JANEAIQBQ"; // <GPGSID>
+	public const string achievement_hit_level_25 = "CgkI9OuD2JANEAIQBg"; // <GPGSID>
+	public const string achievement_hit_level_30 = "CgkI9OuD2JANEAIQBw"; // <GPGSID>
+	public const string achievement_hit_level_35 = "CgkI9OuD2JANEAIQCA"; // <GPGSID>
+	public const string achievement_hit_level_40 = "CgkI9OuD2JANEAIQCQ"; // <GPGSID>
     public const string achievement_hit_level_45 = "CgkI9OuD2JANEAIQCg"; // <GPGSID>
-    public const string achievement_hit_level_30 = "CgkI9OuD2JANEAIQBw"; // <GPGSID>
-    public const string achievement_hit_level_35 = "CgkI9OuD2JANEAIQCA"; // <GPGSID>
-    public const string achievement_hit_level_20 = "CgkI9OuD2JANEAIQBQ"; // <GPGSID>
+	public const string achievement_hit_level_50 = "CgkI9OuD2JANEAIQCw"; // <GPGSID>
+	public const string achievement_hit_level_55 = "CgkI9OuD2JANEAIQDA"; // <GPGSID>
+	public const string achievement_hit_level_65 = "CgkI9OuD2JANEAIQDQ"; // <GPGSID>
     public const string achievement_fast_clicker = "CgkI9OuD2JANEAIQDg"; // <GPGSID>
-    public const string achievement_hit_level_25 = "CgkI9OuD2JANEAIQBg"; // <GPGSID>
-    public const string achievement_hit_level_10 = "CgkI9OuD2JANEAIQAw"; // <GPGSID>
-    public const string achievement_hit_level_40 = "CgkI9OuD2JANEAIQCQ"; // <GPGSID>
+	public const string leaderboard_points = "CgkI9OuD2JANEAIQEA"; // <GPGSID>
+	public const string leaderboard_level = "CgkI9OuD2JANEAIQEQ"; // <GPGSID>
 
 }
 
