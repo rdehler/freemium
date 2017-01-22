@@ -1,0 +1,10 @@
+lastUpgrade=00936
+proj.pluginVersion=0.9.36
+proj.AppId=451156178420
+and.BundleId=com.DayRailer.Freemium
+proj.classDir=Assets%2fScripts
+proj.ConstantsClassName=Constants
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0a%3c%21--%0aGoogle+Play+game+services+IDs.%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0a--%3e%0a%3cresources%3e%0a++%3cstring+name%3d%22app_id%22%3e451156178420%3c%2fstring%3e%0a++%3cstring+name%3d%22package_name%22%3ecom.DayRailer.Freemium%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_2%22%3eCgkI9OuD2JANEAIQAQ%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_5%22%3eCgkI9OuD2JANEAIQAg%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_10%22%3eCgkI9OuD2JANEAIQAw%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_15%22%3eCgkI9OuD2JANEAIQBA%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_20%22%3eCgkI9OuD2JANEAIQBQ%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_25%22%3eCgkI9OuD2JANEAIQBg%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_30%22%3eCgkI9OuD2JANEAIQBw%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_35%22%3eCgkI9OuD2JANEAIQCA%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_40%22%3eCgkI9OuD2JANEAIQCQ%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_45%22%3eCgkI9OuD2JANEAIQCg%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_50%22%3eCgkI9OuD2JANEAIQCw%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_55%22%3eCgkI9OuD2JANEAIQDA%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_hit_level_65%22%3eCgkI9OuD2JANEAIQDQ%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_fast_clicker%22%3eCgkI9OuD2JANEAIQDg%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_barely_there%22%3eCgkI9OuD2JANEAIQDw%3c%2fstring%3e%0a++%3cstring+name%3d%22leaderboard_points%22%3eCgkI9OuD2JANEAIQEA%3c%2fstring%3e%0a++%3cstring+name%3d%22leaderboard_level%22%3eCgkI9OuD2JANEAIQEQ%3c%2fstring%3e%0a%3c%2fresources%3e%0a
+and.ClientId=
+proj.requireGPlus=false
+android.SetupDone=true

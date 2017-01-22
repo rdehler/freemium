@@ -46,8 +46,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\TutorialInfo\Scripts\Editor\TutorialInfoEditor.cs" />
-     <None Include="Assets\TutorialInfo\Fonts\LICENSE.txt" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSAndroidSetupUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSDependencies.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSDocsUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSIOSSetupUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSPostBuild.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSProjectSettings.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSStrings.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSUpgrader.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSUtil.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\NearbyConnectionUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\PlistBuddyHelper.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Elements.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Lexer.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Objects.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\PBXProject.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Parser.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Sections.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Serializer.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Utils.cs" />
+     <None Include="Assets\GooglePlayGames\Editor\template-GameInfo.txt" />
+     <None Include="Assets\GooglePlayGames\Editor\template-AndroidManifest.txt" />
+     <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
+     <None Include="Assets\Plugins\Android\MainLibProj\AndroidManifest.xml" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -90,11 +115,23 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver">
+ <HintPath>/Users/rdehler/git/freemium/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver">
+ <HintPath>/Users/rdehler/git/freemium/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>/Users/rdehler/git/freemium/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
